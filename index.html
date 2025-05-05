@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>URL Shortener JHTK</h1>
+            <p>Shorten your URLs with ease and track your history!</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input type="text" id="urlInput" placeholder="Enter your URL here" />
+                <button id="shortenBtn">Shorten</button>
+            </div>
+
+            <div class="output-section">
+                <label for="shortenedUrl">Shortened URL:</label>
+                <input type="text" id="shortenedUrl" readonly />
+                <button class="copy-btn" id="copyBtn">Copy</button>
+            </div>
+
+            <section class="history">
+                <h2>History</h2>
+                <ul id="historyList"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© JHTK URL Shortener Service</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
